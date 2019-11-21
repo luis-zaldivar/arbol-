@@ -25,8 +25,10 @@ int main(){
 		cout<<"\t ...:::M E N Ú::..."<<endl;
 		cout<<"1.- Agregar un nuevo nodo"<<endl;
 		cout<<"2.- Mostrar el arbol completo"<<endl;
-		cout<<"3.- Buscar un elemento en el arbol"<<endl<<"4.-Mostrar arbol en oredn"<<endl;
-		cout<<"5.- Salir"<<endl;
+		cout<<"3.- Buscar un elemento en el arbol"<<endl;
+		cout<<"4.- Recorrer el arbol en Orden"<<endl;
+		cout<<"5.- Recorrer el arbol en posOrden"<<endl;
+		cout<<"6.- Salir"<<endl;
 		cout<<"¿Cual opcion deseas? ";
 		cin>>opcion;
 		
@@ -61,12 +63,17 @@ int main(){
 				orden(arbol);
 				cout<<"\n\n";
 				system("pause");
+			case 5:
+				cout<<"Recorrido en preOrden: "<<endl;
+				preOrden(arbol);
+				cout<<"\n\n";
+				system("pause");
 		}
 		system("cls");
 		
-	}while(opcion != 4);
+	}while(opcion != 6);
 	
-	
+	getch();
 	return 0;
 }
 
