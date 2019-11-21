@@ -25,8 +25,8 @@ int main(){
 		cout<<"\t ...:::M E N Ú::..."<<endl;
 		cout<<"1.- Agregar un nuevo nodo"<<endl;
 		cout<<"2.- Mostrar el arbol completo"<<endl;
-		cout<<"3.- Buscar un elemento en el arbol"<<endl;
-		cout<<"4.- Salir"<<endl;
+		cout<<"3.- Buscar un elemento en el arbol"<<endl<<"4.-Mostrar arbol en oredn"<<endl;
+		cout<<"5.- Salir"<<endl;
 		cout<<"¿Cual opcion deseas? ";
 		cin>>opcion;
 		
@@ -54,7 +54,13 @@ int main(){
 					cout<<"No enontrado";
 				}
 				cout<<"\n";
+				system("pause");
 				break;
+			case 4:
+				cout<<"Recorrido en Orden: "<<endl;
+				orden(arbol);
+				cout<<"\n\n";
+				system("pause");
 		}
 		system("cls");
 		
